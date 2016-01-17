@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="angularNgRouteDemo">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular route demo</title>
+</head>
+<body>
+	<ul>
+		<li><a ng-href="#/">Page 1</a></li>
+		<li><a ng-href="#/secondpage">Page 2</a></li>
+		<li><a ng-href="#/thirdpage">Page 3</a></li>
+	</ul>
+
+     <div ng-view></div>
+	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="app/home/homecontroller.js"></script>
+	<script type="text/javascript" src="app/secondpage/secondpagecontroller.js"></script>
+	<script type="text/javascript" src="app/thirdpage/thirdpagecontroller.js"></script>
+	
+</body>
+</html>
